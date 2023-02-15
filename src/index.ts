@@ -20,5 +20,21 @@ let employee: [number, string][]
 employee = [
   [1, "me"],
   [2, "you"],
-  ["them", 3] // won't work because in wrong order
+  // ["them", 3] // won't work because in wrong order
 ]
+
+//unions
+let pID: string | number
+pID = 22
+pID = '22'
+
+// Enum
+enum Direction1{
+  Up = 1,
+  Down,
+  Left,
+  Right
+}
+
+console.log(Direction1.Up)
+console.log(Direction1.Left)
